@@ -124,6 +124,7 @@ print(second_lecturer.__str__())
 print(first_student < second_student)
 print(first_lecturer < second_lecturer)
 
+
 def calculat_average_score_students(list_students, course):
     sum_grades = 0
     count_grades = 0
@@ -140,6 +141,7 @@ def calculat_average_score_lecturers(list_lecturers, course):
         sum_grades += sum(lecturer.grades[course])
         count_grades += len(lecturer.grades[course])
     return f"Средняя оценка за лекции всех лекторов {round(sum_grades / count_grades, 2)}"
+
 
 list_students = [first_student, second_student]
 list_lecturers = [first_lecturer, second_lecturer]
